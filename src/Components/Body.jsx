@@ -2,11 +2,7 @@ import React, { useState, useEffect } from "react";
 import { categories, videos } from "../Pages/FeedData";
 import { Link, Route, Routes } from "react-router-dom";
 import VideoPlayPage from "../VideoPages/VideoPlayPage";
-import { All } from "../BodyNabvarPages/All";
-import { Gaming } from "../BodyNabvarPages/Gaming";
-import { NewAll } from "../BodyNabvarPages/NewAll";
-import { HistorySidebar } from "../SidebarPages/HistorySidebar";
-import { SubscribeSidebar } from "../SidebarPages/SubscribeSidebar";
+
 import { ApiKey } from "../Pages/Data";
 const ReuseCatagor = () => {
   return (

@@ -1,14 +1,8 @@
 import React from "react";
 import YoutuveIcon from "../assets/YoutuveIcon.svg";
-import {
-  Bell,
-  MenuIcon,
-  Mic,
-  Plus,
-  Search,
-} from "lucide-react";
+import { Bell, MenuIcon, Mic, Plus, Search } from "lucide-react";
 
-const Header = ({ onMenuClick, SidebarValueShow }) => {
+const Header = ({ onMenuClick }) => {
   const onMenuHeaderClick = () => {
     if (onMenuClick) {
       onMenuClick();
