@@ -74,7 +74,7 @@ const Body = () => {
   useEffect(() => {
     const fetchYoutubeVideos = async () => {
       const result = await fetch(
-        `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=0&key=${ApiKey}`
+        `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=0&key=${ApiKey}`,
       );
 
       const data = await result.json();
@@ -112,12 +112,6 @@ const Body = () => {
         />
 
         <Route path="/videoplaypage" element={<VideoPlayPage />} />
-
-        <Route path="/gaming" element={<Gaming />} />
-        <Route path="/Newsall" element={<NewAll />} />
-        <Route path="/all" element={<All />} />
-        <Route path="/history" element={<HistorySidebar />} />
-        <Route path="/subscription" element={<SubscribeSidebar />} />
       </Routes>
     </div>
   );
